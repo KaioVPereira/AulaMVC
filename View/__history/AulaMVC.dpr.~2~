@@ -1,0 +1,16 @@
+program AulaMVC;
+
+uses
+  Vcl.Forms,
+  U_FrmPrincipal in 'U_FrmPrincipal.pas' {Frm_Principal},
+  U_FrmCadCliente in 'U_FrmCadCliente.pas' {Frm_CadCliente};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFrm_Principal, Frm_Principal);
+  Application.CreateForm(TFrm_CadCliente, Frm_CadCliente);
+  Application.Run;
+end.
